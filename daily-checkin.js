@@ -10,7 +10,8 @@ URL = '' //put your signin URL here
   const deserializedCookies = JSON.parse(cookies)
   try{
   await page.setCookie(...deserializedCookies)
-  await page.goto(URL,{waitUntil:'networkidle2'});
+  await page.goto(URL)
+  await page.waitForTimeout(5000)
   await page.click("div[class*='---active---']")
   }
   catch(e){
