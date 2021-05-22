@@ -16,3 +16,7 @@ npm i puppeteer
 ```bash
 node daily-checkin.js
 ```
+## Tips
+To schedule this to run automatically on Linux, make a cronjob
+
+For Windows, use task scheduler, set the user to SYSTEM to make it run without popup
