@@ -11,8 +11,9 @@ URL = '' //put your signin URL here
   try{
   await page.setCookie(...deserializedCookies)
   await page.goto(URL)
-  await page.waitForTimeout(5000)
+  await page.waitForTimeout(3000)
   await page.click("div[class*='---active---']")
+  await page.waitForTimeout(2000)
   }
   catch(e){
     console.error(e);
